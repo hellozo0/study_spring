@@ -1,0 +1,44 @@
+hello/core/web/LogDemoService.java
+ hello.core.web.LogDemoService
+hello/core/member/MemberRepository.java
+ hello.core.member.MemberRepository
+hello/core/member/Member.java
+ hello.core.member.Member
+hello/core/discount/RateDiscountPolicy.java
+ hello.core.discount.RateDiscountPolicy
+hello/core/common/MyLogger.java
+ hello.core.common.MyLogger
+hello/core/CoreApplication.java
+ hello.core.CoreApplication
+hello/core/member/MemberService.java
+ hello.core.member.MemberService
+hello/core/order/Order.java
+ hello.core.order.Order
+hello/core/OrderApp.java
+ hello.core.OrderApp
+hello/core/order/OrderServiceImpl.java
+ hello.core.order.OrderServiceImpl
+hello/core/member/MemberServiceImpl.java
+ hello.core.member.MemberServiceImpl
+hello/core/annotation/MainDiscountPolicy.java
+ hello.core.annotation.MainDiscountPolicy
+hello/core/discount/FixDiscountPolicy.java
+ hello.core.discount.FixDiscountPolicy
+hello/core/AppConfig.java
+ hello.core.AppConfig
+hello/core/member/MemoryMemberRepository.java
+ hello.core.member.MemoryMemberRepository
+hello/core/order/OrderService.java
+ hello.core.order.OrderService
+hello/core/MemberApp.java
+ hello.core.MemberApp
+hello/core/AutoAppConfig.java
+ hello.core.AutoAppConfig
+hello/core/HelloLombok.java
+ hello.core.HelloLombok
+hello/core/discount/DiscountPolicy.java
+ hello.core.discount.DiscountPolicy
+hello/core/member/Grade.java
+ hello.core.member.Grade
+hello/core/web/LogDemoController.java
+ hello.core.web.LogDemoController

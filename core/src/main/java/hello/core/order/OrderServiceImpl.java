@@ -1,39 +1,80 @@
 package hello.core.order;
 
+import hello.core.annotation.MainDiscountPolicy;
 import hello.core.discount.DiscountPolicy;
 import hello.core.discount.FixDiscountPolicy;
 import hello.core.discount.RateDiscountPolicy;
 import hello.core.member.Member;
 import hello.core.member.MemberRepository;
 import hello.core.member.MemoryMemberRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
+//@RequiredArgsConstructor
 public class OrderServiceImpl implements OrderService {
 
-    //1 문제점: 할인 정책을 변경하려면 클라이언트인 OrderServiceImpl 코드를 고쳐야 함
-    //1 해결책: AppConfig 라고 하는 설정 클래스를 만들어 거기서 관리
-    //1 OCP(개방-폐쇄 원칙) 미충족: 기능을 확장했을 때 클라이언트 코드도 변경하고 있음
-    //1 DIP(의존성 역전 원칙) 미충족: 구현 클래스에 의존하고 있음(FixDiscountPolicy->RateDiscountPolicy)
-//1    private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
-//1    private final DiscountPolicy discountPolicy = new RateDiscountPolicy();
-    private final MemberRepository memberRepository;
-    private final DiscountPolicy discountPolicy;
+    // 필드 주입
+//    @Autowired private MemberRepository memberRepository;
+//    @Autowired private DiscountPolicy discountPolicy;
+
+//    @Autowired  //일반 메서드 주입
+//    public void init(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+//        this.memberRepository = memberRepository;
+//        this.discountPolicy = discountPolicy;
+//    }
+
+    // private final -> 값이 필수적으로 있어야 함
+      private final MemberRepository memberRepository;
+      private final DiscountPolicy discountPolicy;
+
+//      @Autowired
+//      private DiscountPolicy rateDiscountPolicy;
+
+    /*
+    // setter 주입은 빈을 다 등록하고 의존관계 주입단계에서 이루어 진다.
+    @Autowired // @Autowired(required = false) -> 주입할 대상 없어도 동작하게 함
+    public void setMemberRepository(MemberRepository memberRepository) {
+        System.out.println("memberRepository = "+memberRepository);
+        this.memberRepository = memberRepository;
+    }
 
     @Autowired
-    //1 DI를 통해 OCP 와 DIP 모두 충족할 수 있음
+    public void setDiscountPolicy(DiscountPolicy discountPolicy) {
+        System.out.println("discountPolicy = "+discountPolicy);
+        this.discountPolicy = discountPolicy;
+    }
+    */
+
+
+    // @Autowired -> 생성자가 하나일 때에는 @Autowired를 생략할 수 있다.
+    // 생성자 주입은 객체가 생성될 때 주입된다.
+    /*
+        @Qualifier
+        1. @Qualifier 끼리 매칭
+        2. 빈 이름 매칭
+        3. NoSuchBeanDefinitionException 에러 발생
+     */
+    @Autowired
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+        System.out.println("1. OrderServiceImpl.OrderServiceImpl");
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
     }
 
+
     @Override
     public Order createOrder(Long memberId, String itemName, int itemPrice) {
-        //회원 조회와 할인 정책의 역할이 분리되어 있고 각각 기능을 바꾸고 싶다면 구현 객체만 새로 만들어주면 된다.
-        Member member = memberRepository.findById(memberId);    //회원 조회
-        int discountPrice = discountPolicy.discount(member, itemPrice); //할인 정책
+        Member member = memberRepository.findById(memberId);
+        int discountPrice = discountPolicy.discount(member, itemPrice);
 
         return new Order(memberId, itemName, itemPrice, discountPrice);
+    }
+
+    //테스트 용도
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
     }
 }

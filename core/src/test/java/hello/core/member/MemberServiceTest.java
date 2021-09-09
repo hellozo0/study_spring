@@ -10,21 +10,22 @@ public class MemberServiceTest {
     MemberService memberService;
 
     @BeforeEach
-    public void beforeEach() {
-        AppConfig appConfig = new AppConfig();
+    public void beforeEach(){
+        AppConfig appConfig= new AppConfig();
         memberService = appConfig.memberService();
     }
 
     @Test
     void join() {
         //given
-        Member member = new Member(1L,"memberA", Grade.VIP);    //새로운 멤버 생성
+        Member member = new Member(1L, "memberA", Grade.VIP);
 
         //when
-        memberService.join(member); //회원가입하기
+        memberService.join(member);
         Member findMember = memberService.findMember(1L);
 
         //then
         Assertions.assertThat(member).isEqualTo(findMember);
+
     }
 }
