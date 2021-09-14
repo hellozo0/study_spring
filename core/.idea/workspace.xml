@@ -5,126 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec08580d-5c9b-4723-a0d5-b1048e343149" name="Changes" comment="ch 6 컴포넌트 스캔, 의존관계 자동 주입">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/core/HelloLombok.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/core/annotation/MainDiscountPolicy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/core/common/MyLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/core/web/LogDemoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/core/web/LogDemoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/autowired/AllBeanTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/autowired/AutowiredTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/beanfind/ApplicationContextBasicFindTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/lifecycle/BeanLifeCycleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/lifecycle/NetworkClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/order/OrderServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/scope/PrototypeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/scope/SingletonTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/scope/SingletonWithPrototypeTest1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/singleton/ConfigurationSingletonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hello/core/CoreApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hello/core/CoreApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/AppConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/AutoAppConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/CoreApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/MemberApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/OrderApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/discount/DiscountPolicy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/discount/FixDiscountPolicy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/discount/RateDiscountPolicy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/member/Grade.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/member/Member.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/member/MemberRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/member/MemberService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/member/MemberServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/member/MemoryMemberRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/order/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/order/OrderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/order/OrderServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/appConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/CoreApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/beandefinition/BeanDefinitionTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/beanfind/ApplicationContextBasicTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/beanfind/ApplicationContextExtendsFindTest$TestConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/beanfind/ApplicationContextExtendsFindTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/beanfind/ApplicationContextInfoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/beanfind/ApplicationContextSameBeanFindTest$SameBeanConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/beanfind/ApplicationContextSameBeanFindTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/discount/RateDiscountPolicyTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/member/MemberServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/order/OrderServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/scan/AutoAppConfigTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/scan/filter/BeanA.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/scan/filter/BeanB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/scan/filter/ComponentFilterAppConfigTest$ComponentFilterAppConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/scan/filter/ComponentFilterAppConfigTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/scan/filter/MyExcludeComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/scan/filter/MyIncludeComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/singleton/SingletonService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/singleton/SingletonTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/singleton/StatefulService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/singleton/StatefulServiceTest$TestConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/singleton/StatefulServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/xml/XmlAppContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/AutoAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/AutoAppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/CoreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/CoreApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/MemberApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/MemberApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/OrderApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/OrderApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/discount/DiscountPolicy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/discount/DiscountPolicy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/discount/FixDiscountPolicy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/discount/FixDiscountPolicy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/discount/RateDiscountPolicy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/discount/RateDiscountPolicy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/member/Grade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/member/Grade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/member/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/member/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/member/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/member/MemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/member/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/member/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/member/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/member/MemberServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/member/MemoryMemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/member/MemoryMemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/order/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/order/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/order/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/order/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/order/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/core/beandefinition/BeanDefinitionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/core/beandefinition/BeanDefinitionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/core/beanfind/ApplicationContextBasicTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/core/beanfind/ApplicationContextExtendsFindTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/core/beanfind/ApplicationContextExtendsFindTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/core/beanfind/ApplicationContextInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/core/beanfind/ApplicationContextInfoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/core/beanfind/ApplicationContextSameBeanFindTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/core/beanfind/ApplicationContextSameBeanFindTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/core/discount/RateDiscountPolicyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/core/discount/RateDiscountPolicyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/core/member/MemberServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/core/member/MemberServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/core/order/OrderServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/core/order/OrderServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/core/scan/AutoAppConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/core/scan/AutoAppConfigTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/core/scan/filter/ComponentFilterAppConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/core/scan/filter/ComponentFilterAppConfigTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/core/scan/filter/MyExcludeComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/core/scan/filter/MyExcludeComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/core/scan/filter/MyIncludeComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/core/scan/filter/MyIncludeComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/core/singleton/SingletonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/core/singleton/SingletonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/core/singleton/SingletonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/core/singleton/SingletonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/core/singleton/StatefulService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/core/singleton/StatefulService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/core/singleton/StatefulServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/core/singleton/StatefulServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/core/xml/XmlAppContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/core/xml/XmlAppContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/hello/core/lifecycle/NetworkClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/hello/core/lifecycle/NetworkClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/hello.core.autowired.AllBeanTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/hello.core.autowired.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-hello.core.autowired.AllBeanTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hello/core/lifecycle/BeanLifeCycleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/core/lifecycle/BeanLifeCycleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hello/core/lifecycle/NetworkClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/core/lifecycle/NetworkClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,13 +53,34 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
   </component>
-  <component name="RunManager" selected="Gradle.AllBeanTest">
+  <component name="RunManager" selected="Gradle.BeanLifeCycleTest">
     <configuration name="AllBeanTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;hello.core.autowired.AllBeanTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="BeanLifeCycleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;hello.core.lifecycle.BeanLifeCycleTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -219,6 +140,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.BeanLifeCycleTest" />
         <item itemvalue="Gradle.AllBeanTest" />
         <item itemvalue="Gradle.OrderServiceTest" />
         <item itemvalue="Gradle.CoreApplicationTests" />
@@ -246,6 +168,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

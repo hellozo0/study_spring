@@ -9,6 +9,15 @@ import org.springframework.context.annotation.Configuration;
 
 public class BeanLifeCycleTest {
 
+    /* 스프링 빈의 간단한 라이프 사이클
+        객체 생성 -> 의존관계 주입
+        스프링 빈은 객체를 생성하고, 의존관계 주입이 다 끝난 다음에야 필요한 데이터를 사용할 수 있는 준비가 완료된다.
+        따라서 초기화 작업은 의존관계 주입이 모두 완료되고 난 다음에 호출해야 한다.
+        그런데 개발자가 의존관계 주입이 모두 완료된 시점을 어떻게 알 수 있을까?
+        스프링은 의존관계 주입이 완료되면 스프링 빈에게 콜백 메서드를 통해서 초기화 시점을 알려주는 다양한 기능을 제공한다.
+        또한 스프링은 스프링 컨테이너가 종료되기 직전에 소멸 콜백을 준다. 따라서 안전하게 종료 작업을 진행할 수 있다.
+    */
+
     /*  스프링 빈의 이벤트 라이프 사이클
         스프링 컨테이너 생성 -> 스프링 빈 생성 -> 의존관계 주입 -> 초기화 콜백 -> 사용 -> 소멸전 콜백 -> 스프링 종료
 
@@ -24,7 +33,7 @@ public class BeanLifeCycleTest {
     public void lifeCycleTest() {
         ConfigurableApplicationContext ac = new AnnotationConfigApplicationContext(LifeCycleConfig.class);
         NetworkClient client = ac.getBean(NetworkClient.class);
-        ac.close();
+        ac.close(); //스프링 컨테이너를 종료, ConfigurableApplicationContext 필요
     }
 
     @Configuration
@@ -37,7 +46,8 @@ public class BeanLifeCycleTest {
             초기화, 종료 메서드를 적용할 수 있다.
          */
 
-//        @Bean(initMethod = "init", destroyMethod = "close")
+        // 빈 등록 초기화, 소멸 메서드 지정
+        // @Bean(initMethod = "init", destroyMethod = "close")
         @Bean
         public NetworkClient networkClient() {
             NetworkClient networkClient = new NetworkClient();

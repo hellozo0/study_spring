@@ -1,35 +1,17 @@
-À17:11:31.177 [Test worker] DEBUG org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@273407e6
-Â17:11:31.195 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-Ù17:11:31.326 [Test worker] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/anhyeonju/Desktop/Spring/core/build/classes/java/main/hello/core/common/MyLogger.class]
-ˇ17:11:31.327 [Test worker] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/anhyeonju/Desktop/Spring/core/build/classes/java/main/hello/core/discount/FixDiscountPolicy.class]
-Ä17:11:31.337 [Test worker] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/anhyeonju/Desktop/Spring/core/build/classes/java/main/hello/core/discount/RateDiscountPolicy.class]
-˝17:11:31.339 [Test worker] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/anhyeonju/Desktop/Spring/core/build/classes/java/main/hello/core/member/MemberServiceImpl.class]
-Ç17:11:31.339 [Test worker] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/anhyeonju/Desktop/Spring/core/build/classes/java/main/hello/core/member/MemoryMemberRepository.class]
-˚17:11:31.341 [Test worker] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/anhyeonju/Desktop/Spring/core/build/classes/java/main/hello/core/order/OrderServiceImpl.class]
-˙17:11:31.354 [Test worker] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/anhyeonju/Desktop/Spring/core/build/classes/java/main/hello/core/web/LogDemoController.class]
-˜17:11:31.358 [Test worker] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/anhyeonju/Desktop/Spring/core/build/classes/java/main/hello/core/web/LogDemoService.class]
-÷17:11:31.461 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
-‘17:11:31.463 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
-·17:11:31.465 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-ﬁ17:11:31.467 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-£17:11:31.473 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'autoAppConfig'
-±17:11:31.479 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'allBeanTest.DiscountService'
-ß17:11:31.492 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'fixDiscountPolicy'
-®17:11:31.493 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'rateDiscountPolicy'
-⁄17:11:31.510 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'allBeanTest.DiscountService' via constructor to bean named 'fixDiscountPolicy'
-€17:11:31.510 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'allBeanTest.DiscountService' via constructor to bean named 'rateDiscountPolicy'
-ìpolicyMap = {fixDiscountPolicy=hello.core.discount.FixDiscountPolicy@14babc05, rateDiscountPolicy=hello.core.discount.RateDiscountPolicy@6363864f}
-mpolicies = [hello.core.discount.FixDiscountPolicy@14babc05, hello.core.discount.RateDiscountPolicy@6363864f]
-û17:11:31.525 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'myLogger'
-ß17:11:31.738 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'memberServiceImpl'
-¨17:11:31.752 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'memoryMemberRepository'
-’17:11:31.753 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'memberServiceImpl' via constructor to bean named 'memoryMemberRepository'
-¶17:11:31.754 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'orderServiceImpl'
-‘17:11:31.760 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'orderServiceImpl' via constructor to bean named 'memoryMemberRepository'
-œ17:11:31.761 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'orderServiceImpl' via constructor to bean named 'fixDiscountPolicy'
-%1. OrderServiceImpl.OrderServiceImpl
-ß17:11:31.762 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logDemoController'
-§17:11:31.774 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logDemoService'
-ƒ17:11:31.775 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'logDemoService' via constructor to bean named 'myLogger'
-Õ17:11:31.775 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'logDemoController' via constructor to bean named 'logDemoService'
-«17:11:31.776 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'logDemoController' via constructor to bean named 'myLogger'
+À11:32:27.058 [Test worker] DEBUG org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3c3f2e15
+Â11:32:27.078 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+÷11:32:27.206 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+‘11:32:27.209 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+·11:32:27.212 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+ﬁ11:32:27.213 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+∑11:32:27.224 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'beanLifeCycleTest.LifeCycleConfig'
+£11:32:27.232 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'networkClient'
+ÏÉùÏÑ±Ïûê Ìò∏Ï∂ú, url = null
+connect: null
+/call: null message: Ï¥àÍ∏∞Ìôî Ïó∞Í≤∞ Î©îÏÑ∏ÏßÄ
+!NetworkClient.afterPropertiesSet
+!connect: http://hello-spring.dev
+Bcall: http://hello-spring.dev message: Ï¥àÍ∏∞Ìôî Ïó∞Í≤∞ Î©îÏÑ∏ÏßÄ
+Ò11:32:27.344 [Test worker] DEBUG org.springframework.context.annotation.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@3c3f2e15, started on Tue Sep 14 11:32:27 KST 2021
+NetworkClient.destroy
+close: http://hello-spring.dev
