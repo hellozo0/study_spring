@@ -22,17 +22,17 @@ public class PrototypeTest {
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(PrototypeBean.class);
 
         System.out.println("find prototypeBean1");
-        PrototypeBean prototypeBean1 = ac.getBean(PrototypeBean.class);
+        PrototypeBean prototypeBean1 = ac.getBean(PrototypeBean.class); //init 호출
 
         System.out.println("find prototypeBean1");
-        PrototypeBean prototypeBean2 = ac.getBean(PrototypeBean.class);
+        PrototypeBean prototypeBean2 = ac.getBean(PrototypeBean.class); //init 호출
 
-        System.out.println("prototypeBean1 = " + prototypeBean1);
-        System.out.println("prototypeBean2 = " + prototypeBean2);
+        System.out.println("prototypeBean1 = " + prototypeBean1); //서로 다른 주소
+        System.out.println("prototypeBean2 = " + prototypeBean2); //서로 다른 주소
         assertThat(prototypeBean1).isNotSameAs(prototypeBean2);
 
 
-        // 수작업으로 종료 메서드를 직접 호출한다.
+        // 수작업으로 종료 메서드를 직접 호출한다. --> 프로토타입 빈은 스프링 컨테이너가 종료에 관여하지 않아서.
         prototypeBean1.destroy();
         prototypeBean2.destroy();
 

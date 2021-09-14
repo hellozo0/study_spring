@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="hello.core.scope.SingletonWithPrototypeTest1" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-14T05:30:40" hostname="anhyeonjuui-MacBookPro.local" time="0.337">
+  <properties/>
+  <testcase name="singletonClientUsePrototype()" classname="hello.core.scope.SingletonWithPrototypeTest1" time="0.337"/>
+  <system-out><![CDATA[14:30:40.740 [Test worker] DEBUG org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@373de6ef
+14:30:40.756 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:30:40.781 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+14:30:40.783 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+14:30:40.785 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:30:40.787 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:30:40.793 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'singletonWithPrototypeTest1.ClientBean'
+PrototypeBean.init hello.core.scope.SingletonWithPrototypeTest1$PrototypeBean@395ee707
+PrototypeBean.init hello.core.scope.SingletonWithPrototypeTest1$PrototypeBean@51f7bc78
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
